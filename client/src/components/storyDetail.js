@@ -10,8 +10,8 @@ const StoryDetail = ({ stories }) => {
   }
 
   return (
-    <div className="text-center">
-      <img src={story.image} alt={story.title} className="w-full h-auto" />
+    <div className="container mx-auto p-4">
+      <img src={story.image} alt={story.title} className="w-full h-auto rounded-lg shadow-lg" />
       <h1 className="mt-4 text-2xl font-bold">{story.title}</h1>
       <p className="mt-4">{story.content}</p>
     </div>
